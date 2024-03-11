@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# MineFild
+[![react-version]][react-download] [![next-version]][next-download] [![node-version]][node-download] [![typescript-version]][typescript-download] [![yarn-version]][yarn-download] [![tailwind-version]][tailwind-download] [![react-bootstrap-icons-version]][react-bootstrap-icons-download] 
 
-## Getting Started
+[Portuguese](/README_pt-br.md)
 
-First, run the development server:
+Project aimed at studying programming logic using a copy of the Minesweeper game as a basis.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### TODO List for this project:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. **Board:**
+   - [X] Create a game board with cells representing mines and their neighbors.
+   - [X] Define the size of the board (size selection function).
+   - [X] Generate mines randomly on the board.
+   - [X] Create a seed system for generating boards.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. **User Interface (UI):**
+   - [X] Draw the board on the screen so the player can interact.
+   - [X] Display the number of neighboring mines in each revealed cell.
+   - [X] Allow the player to click on cells to reveal their content.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. **Game Rules:**
+   - [ ] Implement the rules of Minesweeper, where the player must avoid clicking on cells with mines.
+   - [ ] Allow the player to mark cells suspected to contain mines.
 
-## Learn More
+4. **Game Logic:**
+   - [ ] Create functions to check if a cell is empty, contains a mine, or has neighboring mines.
+   - [ ] Implement the logic to automatically reveal neighboring cells when an empty cell is discovered.
+   - [ ] Check if all non-mined cells have been discovered to determine the player's victory.
 
-To learn more about Next.js, take a look at the following resources:
+5. **State Management:**
+   - [ ] Maintain control of the game state, including discovered, flagged, and undiscovered cells.
+   - [ ] Implement the functionality to restart the game.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+6. **Scoring:**
+   - [ ] Record and display the player's score (e.g., elapsed time, number of cells discovered, etc.).
+   - [ ] Implement a ranking or high score system.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+7. **Customization:**
+   - [ ] Allow the player to choose the difficulty level (number of mines, board size, etc.).
+   - [ ] Add customization options, such as changing the style of the board or the images of the cells.
 
-## Deploy on Vercel
+8. **Testing:**
+   - [ ] Test the game to ensure all functionalities are working correctly.
+   - [ ] Handle edge cases, such as very large or very small boards.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+9. **Polishing:**
+    - [ ] Improve the user interface to make the game more intuitive and enjoyable to play.
+    - [ ] Fix any bugs or performance issues.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+
+[react-download]: https://react.dev/learn/start-a-new-react-project
+[next-download]: https://nextjs.org/docs/getting-started/installation
+[node-download]: https://nodejs.org/download/release/v20.11.0/
+[typescript-download]: https://www.typescriptlang.org/download
+[yarn-download]: https://classic.yarnpkg.com/en/docs/install#windows-stable
+[tailwind-download]: https://tailwindcss.com/docs/installation
+[react-bootstrap-icons-download]: https://www.npmjs.com/package/react-bootstrap-icons/v/1.11.3
+
+[react-version]: https://img.shields.io/badge/React-v18-blue
+[next-version]: https://img.shields.io/badge/Next-v14.1.3-blue
+[node-version]: https://img.shields.io/badge/node-20.11.0-blue
+[typescript-version]: https://img.shields.io/badge/Typescript-v5-blue
+[tailwind-version]: https://img.shields.io/badge/Tailwind-v3.3.0-blue
+[yarn-version]: https://img.shields.io/badge/yarn-1.22.19-blue
+[react-bootstrap-icons-version]: https://img.shields.io/badge/React_bootstrap_icons-v1.11.3-blue
